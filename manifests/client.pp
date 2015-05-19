@@ -254,7 +254,7 @@ class backuppc::client (
   $hosts_file_dhcp       = 0,
   $hosts_file_more_users = '',
   $host_ip               = false,
-  $client_name_alias     = 'undef'
+  $client_name_alias     = false
     ) {
   include backuppc::params
 

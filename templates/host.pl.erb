@@ -184,3 +184,6 @@ $Conf{EMailNotifyOldBackupDays} = <%= @email_notify_old_backup_days %>;
 <% if @host_ip -%>
 $Conf{hostIP} = <%= @host_ip %>;
 <% end -%>
+<% if @client_name_alias -%>
+$Conf{ClientNameAlias} = '<%= @client_name_alias %>';
+<% end -%>

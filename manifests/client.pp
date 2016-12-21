@@ -268,8 +268,7 @@ class backuppc::client (
   validate_re($xfer_method, '^(smb|rsync|rsyncd|tar)$',
   'Xfer_method parameter must have value of: smb, rsync, rsyncd or tar')
 
-  validate_re($xfer_loglevel, '^[0-2]$',
-  'Xfer_loglevel parameter must be a 0, 1 or 2')
+  validate_integer($xfer_loglevel, 2, 0)
 
   $real_incr_fill = bool2num($incr_fill)
   $real_backups_disable = bool2num($backups_disable)
